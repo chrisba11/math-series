@@ -1,11 +1,14 @@
 """
-
+These are functions that create a sequence by adding the first number to the
+second number and then adding the third number to the second, and so on.
 """
 
 
 def fibonacci(n):
     """
+    This function assumed the first number is 0 and the second number is 1.
 
+    fibonacci(nth number in sequence you want returned)
     """
     first = 0
     second = 1
@@ -24,7 +27,9 @@ def fibonacci(n):
 
 def lucas(n):
     """
+    This function assumes the first number is 2 and the second number is 1.
 
+    lucas(nth number in sequence you want returned)
     """
     first = 2
     second = 1
@@ -43,7 +48,16 @@ def lucas(n):
 
 def sum_series(n, first=0, second=1):
     """
+    This function accepts up to three arguments. The first arg is the number
+    of the sequence you would like to return. The second and third args are
+    optional, where the second arg is the first number in the sequence and the
+    third arg is the second number in the sequence.
 
+    The second arg will default to 0 if not supplied.
+    The third arg will default to 1 if not supplied.
+
+    sum_series(nth number in sequence you want returned,
+    [first num in sequence], [second num in sequence])
     """
     first = first
     second = second
